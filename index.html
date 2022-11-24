@@ -97,8 +97,6 @@
 	let myCopyright = myDate.getFullYear();
 	let dayName = new Date().toLocaleString('default', {weekday: 'long'});
 
-	//REMOVE THE NEXT LINE WHEN DONE TESTING
-	myHour = 12;
 
 	if(myHour >= 5 && myHour < 12){
 		myGreeting = "Good Morning! Today is " + dayName + ".";
@@ -108,11 +106,11 @@
 		myGreeting = "Good Afternoon! Today is " + dayName + ".";
 		myColor = "green";
 		myPic = "afternoon.jpg";
-	}else if  (myHour >= 18 && myHour < 21){
+	}else if  (myHour >= 18 && myHour < 23){
 		myGreeting = "Good Evening! Today is " + dayName + ".";
 		myColor = "red";
 		myPic = "evening.jpg";
-	}else{ (myHour >= 21 && myHour <5)
+	}else{ (myHour >= 23 || myHour <5)
 		//alert("NOT Afternoon!");
 		myGreeting = "Good Night! Today is " + dayName + ".";
 		myColor = "blue";
